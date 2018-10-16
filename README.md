@@ -73,8 +73,8 @@ public class TestClass {
 The constructor for a Value storing a boolean or a string is
 
 ```java
-Value<Boolean> valBool = new Value<Boolean>("<VALUE NAME>", <VALUE PARENT>, <VALUE TYPE BOOLEAN>);
-Value<String> valString = new Value<String>("<VALUE NAME>", <VALUE PARENT>, <VALUE TYPE STRING>);
+Value<Boolean> valBool = new Value<Boolean>(<VALUE NAME TYPE STRING>, <VALUE PARENT>, <VALUE TYPE BOOLEAN>);
+Value<String> valString = new Value<String>(<VALUE NAME TYPE STRING>, <VALUE PARENT>, <VALUE TYPE STRING>);
 ```
 
 ## Authors
