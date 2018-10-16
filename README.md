@@ -16,11 +16,11 @@ What things you need to install the software and how to install them
 
 ### Installing
 
-####For Eclipse:
+**For Eclipse**:
 
 just add the jar file from the lib folder to your BuildPath
 
-####For IntellIJ:
+**For IntellIJ**:
 
 just add the jar file from the lib folder to your Dependecies under ProjectStructure
 
