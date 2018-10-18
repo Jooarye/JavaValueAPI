@@ -89,6 +89,7 @@ Value<String> valString = new Value<String>(<VALUE NAME TYPE STRING>, <VALUE PAR
 ## Authors
 
 * **Jooarye** - *Initial work* - https://github.com/Jooarye/
+* **Mika Westphal** - *Some small Bug fixes* - https://github.com/Mika-Westphal
 
 ## License
 
