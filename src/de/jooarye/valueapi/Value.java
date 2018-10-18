@@ -106,7 +106,7 @@ public class Value<T> {
 	}
 
 	/*
-	 * Is the Value a int
+	 * Is the Value an int
 	 */
 	public boolean isInteger() {
 		return this.curValue.getClass().equals(Integer.class);
