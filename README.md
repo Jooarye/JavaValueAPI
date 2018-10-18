@@ -79,7 +79,7 @@ public class TestClass {
 }
 ```
 
-The constructors for any kind of Value
+Here's how you create a new Value
 
 ```java
 Value<Boolean> valBool = new Value<Boolean>(<VALUE NAME TYPE STRING>, <VALUE PARENT>, <VALUE TYPE BOOLEAN>);
