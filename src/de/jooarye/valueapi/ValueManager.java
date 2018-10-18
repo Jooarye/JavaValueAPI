@@ -81,7 +81,7 @@ public class ValueManager {
 		final Properties props = new Properties();
 		this.REGISTRY_MAP.stream().forEach(value -> {
 			String key = value.getParent().getClass().getSimpleName() + "-" + value.getValue();
-			props.setValue(key, String.valueOf(value.getValue()));
+			props.put(key, String.valueOf(value.getValue()));
 		});
 		props.save(new FileOutputStream(path), "ValueApi Configuration File");
 	}
