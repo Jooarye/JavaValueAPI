@@ -60,6 +60,11 @@ public class Main {
 		System.out.println("Value direct access : " + tc.testValue.getValue()); // Should again return true
 		System.out.println("Value distant access: " + ValueAPI.getValueManager().getValue("TestValue", tc).getValue()); // Should also return true
 
+		// ALSO YOU CAN SAVE AND LOAD CONFIG FILES
+
+		ValueAPI.getValueManager().loadConfiguration("test.conf");
+		ValueAPI.getValueManager().saveConfiguration("test2.conf");
+
 	}
 
 }
