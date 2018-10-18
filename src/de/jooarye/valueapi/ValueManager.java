@@ -1,7 +1,5 @@
 package de.jooarye.valueapi;
 
-import com.sun.istack.internal.NotNull;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileInputStream;
@@ -100,7 +98,7 @@ public class ValueManager {
 	/*
 	 * Parse and set the value of a Value
 	 */
-	private void setValue(@NotNull Value val, String value) {
+	private void setValue(Value val, String value) {
 		if(val.getValue().getClass() == Integer.class) {
 			val.setValue(Integer.parseInt(value));
 		} else if(val.getValue().getClass() == Boolean.class) {
