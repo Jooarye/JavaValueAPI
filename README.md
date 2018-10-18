@@ -24,6 +24,10 @@ just add the jar file from the lib folder to your BuildPath
 
 just add the jar file from the lib folder to your Dependecies under ProjectStructure
 
+**I don't add any support for any other IDE or Editor!**
+
+but it might still work
+
 ## Example
 
 With this Api you can access Values from distance without getter or setter
