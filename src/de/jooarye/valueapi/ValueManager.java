@@ -70,7 +70,7 @@ public class ValueManager {
 		props.load(new FileInputStream(path));
 
 		this.REGISTRY_MAP.keySet().stream().forEach(parent -> {
-			this.REGISTRY_MAP.stream().forEach(value -> {
+			this.REGISTRY_MAP.get(parent).stream().forEach(value -> {
 				String key = parent.getClass().getSimpleName() + "-" + value.getValue();
 				if(props.keySet().contains(key)) {
 					String val = props.getProperty(key);
