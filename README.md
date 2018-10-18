@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-* IntellIJ or Eclipse
+* IntellIJ or Eclipse or the editor that you want to use
 * Java 8
 
 ### Installing
