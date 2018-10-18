@@ -84,7 +84,7 @@ public class ValueManager {
 		final Properties props = new Properties();
 		this.REGISTRY_MAP.keySet().stream().forEach(parent -> {
 			this.REGISTRY_MAP.get(parent).stream().forEach(value -> {
-				String key = value.getParent().getClass().getSimpleName() + "-" + value.getValue();
+				String key = parent.getClass().getSimpleName() + "-" + value.getValue();
 				props.put(key, String.valueOf(value.getValue()));
 			});
 		});
