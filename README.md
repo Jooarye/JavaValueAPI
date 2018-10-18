@@ -79,11 +79,15 @@ public class TestClass {
 }
 ```
 
-The constructor for a Value storing a boolean or a string is
+The constructors for any kind of Value
 
 ```java
 Value<Boolean> valBool = new Value<Boolean>(<VALUE NAME TYPE STRING>, <VALUE PARENT>, <VALUE TYPE BOOLEAN>);
 Value<String> valString = new Value<String>(<VALUE NAME TYPE STRING>, <VALUE PARENT>, <VALUE TYPE STRING>);
+Value<Integer> valInt = new Value<Integer>(<VALUE NAME TYPE STRING>, <VALUE PARENT>, <VALUE TYPE INTEGER>, <MINVAL TYPE INTEGER>, <MAXVAL TYPE INTEGER>);
+Value<Double> valDouble = new Value<Double>(<VALUE NAME TYPE STRING>, <VALUE PARENT>, <VALUE TYPE DOUBLE>, <MINVAL TYPE DOUBLE>, <MAXVAL TYPE DOUBLE>);
+Value<Float> valFloat = new Value<Float>(<VALUE NAME TYPE STRING>, <VALUE PARENT>, <VALUE TYPE FLOAT>, <MINVAL TYPE FLOAT>, <MAXVAL TYPE FLOAT>);
+Value<Long> valLong = new Value<Long>(<VALUE NAME TYPE STRING>, <VALUE PARENT>, <VALUE TYPE LONG>, <MINVAL TYPE LONG>, <MAXVAL TYPE LONG>);
 ```
 
 ## Authors
