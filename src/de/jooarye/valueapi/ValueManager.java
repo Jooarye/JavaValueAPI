@@ -68,12 +68,15 @@ public class ValueManager {
 	public void loadConfiguration(String path) throws IOException {
 		final Properties props = new Properties();
 		props.load(new FileInputStream(path));
-		this.REGISTRY_MAP.stream().forEach(value -> {
-			String key = value.getParent().getClass().getSimpleName() + "-" + value.getValue();
-			if(props.keySet().contains(key)) {
-				String val = props.getProperty(key);
-				this.setValue(value, val);
-			}
+
+		this.REGISTRY_MAP.keySet().stream().forEach(parent -> {
+			this.REGISTRY_MAP.stream().forEach(value -> {
+				String key = parent.getClass().getSimpleName() + "-" + value.getValue();
+				if(props.keySet().contains(key)) {
+					String val = props.getProperty(key);
+					this.setValue(value, val);
+				}
+			});
 		});
 	}
 
