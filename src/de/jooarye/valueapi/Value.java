@@ -12,6 +12,7 @@ public class Value<T> {
 
 	private String name;
 	private Object parent;
+	private T initValue;
 	private T curValue;
 	private final T minValue;
 	private final T maxValue;
@@ -24,6 +25,7 @@ public class Value<T> {
 		this.name = name;
 		this.parent = parent;
 		this.curValue = value;
+		this.initValue = value;
 		this.minValue = null;
 		this.maxValue = null;
 		ValueAPI.getValueManager().registerValue(this);
@@ -37,6 +39,7 @@ public class Value<T> {
 		this.name = name;
 		this.parent = parent;
 		this.curValue = value;
+		this.initValue = value;
 		this.minValue = min;
 		this.maxValue = max;
 		ValueAPI.getValueManager().registerValue(this);
@@ -64,6 +67,13 @@ public class Value<T> {
 	}
 
 	/*
+	 * Get the init value
+	 */
+	public T getInitValue() {
+		return initValue;
+	}
+
+	/*
 	 * Get the maximum value | ONLY FOR NUMBERS
 	 */
 	public T getMaxValue() {
@@ -82,6 +92,13 @@ public class Value<T> {
 	 */
 	public void setValue(T value) {
 		this.curValue = value;
+	}
+
+	/*
+	 * Reset the value to init state
+	 */
+	public void resetValue() {
+		this.curValue = this.initValue;
 	}
 
 	/*
