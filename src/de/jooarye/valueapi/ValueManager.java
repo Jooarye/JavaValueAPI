@@ -82,9 +82,11 @@ public class ValueManager {
 	 */
 	public void saveConfiguration(String path) throws IOException {
 		final Properties props = new Properties();
-		this.REGISTRY_MAP.stream().forEach(value -> {
-			String key = value.getParent().getClass().getSimpleName() + "-" + value.getValue();
-			props.put(key, String.valueOf(value.getValue()));
+		this.REGISTRY_MAP.keySet().stream().forEach(parent -> {
+			this.REGISTRY_MAP.get(parent).stream().forEach(value -> {
+				String key = value.getParent().getClass().getSimpleName() + "-" + value.getValue();
+				props.put(key, String.valueOf(value.getValue()));
+			});
 		});
 		props.save(new FileOutputStream(path), "ValueApi Configuration File");
 	}
