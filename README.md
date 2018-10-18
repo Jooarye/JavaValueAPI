@@ -97,4 +97,4 @@ Value<Long> valLong = new Value<Long>(<VALUE NAME TYPE STRING>, <VALUE PARENT>, 
 
 ## License
 
-This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU GPLv3 License
