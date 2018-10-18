@@ -1,5 +1,8 @@
 package de.jooarye.valueapi;
 
+import java.io.FileOutputStream;
+import java.io.FileInputStream;
+import java.util.Properties;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -67,7 +70,7 @@ public class ValueManager {
 		props.load(new FileInputStream(path));
 		this.REGISTRY_MAP.stream().forEach(value -> {
 			String key = value.getParent().getClass().getSimpleName() + "-" + value.getValue();
-			if(props.keySet().containsKey(key)) {
+			if(props.keySet().contains(key)) {
 				String val = props.getProperty(key);
 				this.setValue(value, val);
 			}
