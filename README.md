@@ -93,7 +93,7 @@ Value<Long> valLong = new Value<Long>(<VALUE NAME TYPE STRING>, <VALUE PARENT>, 
 ## Authors
 
 * **Jooarye** - *Initial work* - https://github.com/Jooarye/
-* **Mika Westphal** - *Some small Bug fixes* - https://github.com/Mika-Westphal
+* **Mika Westphal** - *Some small bugfixes* - https://github.com/Mika-Westphal
 
 ## License
 
