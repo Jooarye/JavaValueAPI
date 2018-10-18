@@ -68,7 +68,6 @@ public class ValueManager {
 	public void loadConfiguration(String path) throws IOException {
 		final Properties props = new Properties();
 		props.load(new FileInputStream(path));
-
 		this.REGISTRY_MAP.keySet().stream().forEach(parent -> {
 			this.REGISTRY_MAP.get(parent).stream().forEach(value -> {
 				String key = parent.getClass().getSimpleName() + "-" + value.getValue();
